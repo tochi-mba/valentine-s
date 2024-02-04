@@ -31,7 +31,7 @@ var alerts = ["wrong answer🤓",
 async function displayText() {
     for (var i = 0; i < text.length; i++) {
         question.innerHTML += text[i];
-        await new Promise(r => setTimeout(r, 100));
+        await new Promise(r => setTimeout(r, 90));
     }
 }
 
@@ -113,7 +113,7 @@ function yesClick(){
     var interval = 100;
 
     var scaleInterval = setInterval(function() {
-        successScale += 0.01;
+        successScale += 0.007;
     
         if (successScale >= 3.5) {
             clearInterval(scaleInterval);
