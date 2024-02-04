@@ -1,0 +1,70 @@
+#helloKittyImg{
+    width:200px;
+}
+
+#heartsImg{
+    width:150px;
+}
+
+#heartsImg,#helloKittyImg,#xoxoImg{
+    display:inline-block;
+}
+
+#xoxoImg{
+    width:150px;
+    rotate: 40deg;
+}
+
+#image{
+    margin-top:100px;
+}
+
+@font-face {
+    font-family: helloKitty;
+    src:url('assets/fonts/helloKitty.ttf');
+}
+
+#question{
+    font-family: helloKitty;
+    font-size: 30px;
+}
+
+.yesBtn,.noBtn{
+    display: inline-block;
+    font-size: 13px;
+}
+
+.noBtn{
+    z-index: 999 !important;
+
+}
+
+#yesBtn,#noBtn{
+    padding:20px;
+    cursor:pointer;
+    border-radius: 10px;
+    transition: transform 300ms;
+}
+
+#yesBtn{
+    background-color: #C1E1C1;
+}
+
+#noBtn{
+    background-color: #ff6961;
+}
+
+#noBtn:hover, #yesBtn:hover {
+    transition: transform 300ms;
+    transform: scale(1.2);
+}
+
+
+body{
+    background-image: url('assets/background.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-x:hidden;
+    user-select: none;
+}

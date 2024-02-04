@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MARYY</title>
+</head>
+<body onload="displayText();">
+    <center id="preAnswer">
+        <div id="image">
+            <img src="https://64.media.tumblr.com/013f2d4d6211d66de8f83ad0b41a56be/b6dfbc1d3f692c02-96/s1280x1920/48b149f7e9151789069d086d0778bb6c3384ea60.gifv" alt="" id="heartsImg">
+            <img id="helloKittyImg" src="https://64.media.tumblr.com/38ee5098c18a6ae1c94903e7082be15c/b6dfbc1d3f692c02-cb/s1280x1920/a959a50f0418625cc654b86e2c8820e9b2d320c7.gifv" alt="">
+            <img src="https://64.media.tumblr.com/57842974fbda7fa56e8be53858861e25/b6dfbc1d3f692c02-c7/s1280x1920/3445510a94432d8bc9eba46f15f8064a42e4a13c.gifv" alt="" id="xoxoImg">
+        </div>
+        <div id="text">
+            <p id="question"></p>
+        </div>
+
+        <div class="yesBtn">
+            <button onclick="yesClick()" id="yesBtn">Yes ◝(ᵔᵕᵔ)◜</button>
+        </div>
+         <div id="noBtnContainer" class="noBtn">
+            <button onclick="noClick()" id="noBtn">No (◡︵◡)</button>
+         </div>
+    </center>
+
+    <center id="successContainer">
+        
+    </center>
+    
+    <audio id="audio" style="display:none" src="assets/sounds/themeMusic.mp3" preload="auto"></audio>
+    <audio id="audio_effects" style="display:none" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
