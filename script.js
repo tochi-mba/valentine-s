@@ -115,7 +115,7 @@ function yesClick(){
     var scaleInterval = setInterval(function() {
         successScale += 0.007;
     
-        if (successScale >= 3.5) {
+        if (successScale >= 3.7) {
             clearInterval(scaleInterval);
         }
 
