@@ -108,7 +108,8 @@ function yesClick(){
     sound_effects.pause()
     var all = document.getElementById("preAnswer")
     all.style.display = "none"
-    
+    document.body.style.background = 'url("https://www.inquirer.com/resizer/DBJPU9Nam3kTDfzqiYcnUqz9ItI=/arc-anglerfish-arc2-prod-pmn/public/DCJFGPCJUNGL7EJTURZ3JO34TQ.gif")';
+    document.body.style.backgroundSize = 'cover';
     var interval = 100;
 
     var scaleInterval = setInterval(function() {
