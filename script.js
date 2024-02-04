@@ -6,6 +6,7 @@ var sound = document.getElementById("audio");
 var sound_effects = document.getElementById("audio_effects")
 var bouncing = false;
 var successVideo = document.getElementById("successContainer");
+var successScale = 1;
 
 var btnScale = 20
 var btnFontSize = 13
@@ -107,5 +108,19 @@ function yesClick(){
     sound_effects.pause()
     var all = document.getElementById("preAnswer")
     all.style.display = "none"
-    successVideo.style.display = "block"
+    
+    var interval = 100;
+
+    var scaleInterval = setInterval(function() {
+        successScale += 0.01;
+    
+        if (successScale >= 3.5) {
+            clearInterval(scaleInterval);
+        }
+
+        successVideo.style.transform = "scale(" + successScale + ")";
+        successVideo.style.visibility = "visible";
+        document.querySelector("#successContainer > video").play()
+    }, interval);
+
 }

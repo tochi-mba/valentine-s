@@ -60,6 +60,7 @@
 }
 
 
+
 body{
     background-image: url('assets/background.gif');
     background-repeat: no-repeat;
@@ -67,4 +68,19 @@ body{
     overflow-y: hidden;
     overflow-x:hidden;
     user-select: none;
+}
+
+
+#successContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    visibility: hidden;
+}
+
+#successContainer video{
+    width:100%;
+    border-radius: 20px;
 }
