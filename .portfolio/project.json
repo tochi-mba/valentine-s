@@ -1,0 +1,11 @@
+{
+  "$schema": "https://tochi-mba.github.io/schema/project.schema.json",
+  "slug": "valentines",
+  "name": "Valentine's",
+  "tagline": "A playful Valentine's page, with sound, a custom font and a celebration video.",
+  "stack": ["HTML", "CSS", "JavaScript"],
+  "category": "early",
+  "status": "archived",
+  "order": 740,
+  "display": true
+}
